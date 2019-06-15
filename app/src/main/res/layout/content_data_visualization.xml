@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="data.personal.coursefinalversionfour.DataVisualizationActivity"
+    tools:showIn="@layout/activity_dashboard">
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Data Visualization"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/savebutton"
+        android:gravity="center"
+        android:typeface="serif" />
+
+    <Button
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/plus"
+        android:drawablePadding="10dp"
+        android:text="Location Wise Smoking"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/locationWise"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/add_button"
+        android:textColor="@color/colorWhite"
+
+        />
+
+    <Button
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/stats"
+        android:drawablePadding="10dp"
+        android:text="Day Period Wise Smoking"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dayPeriodWise"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/add_button"
+        android:textColor="@color/colorWhite"/>
+    <Button
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/stats"
+        android:drawablePadding="10dp"
+        android:text="Your Progress"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/progress"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/add_button"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>
+

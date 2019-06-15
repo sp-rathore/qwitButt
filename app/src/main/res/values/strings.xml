@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CourseFinal</string>
+    <string name="action_settings">Settings</string>
+    <string name="logostyle"> <strike>qwitButt</strike> </string>
+    <string name="title_activity_configuration">ConfigurationActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_add_event">AddEventActivity</string>
+    <string name="title_activity_success">SuccessActivity</string>
+    <string name="fit_running">Running</string>
+    <string name="fit_cycling">Cycling</string>
+    <string name="title_deco_activity">DecoDemo</string>
+    <string name="title_activity_location_event">LocationEvent</string>
+    <string name="title_activity_data_visualization">DataVisualizationActivity</string>
+    <string name="title_activity_day_period_event">DayPeriodEventActivity</string>
+    <string name="title_activity_progress">ProgressActivity</string>
+
+</resources>

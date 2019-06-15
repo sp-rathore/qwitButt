@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/content_configuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="data.personal.coursefinalversionfour.ConfigurationActivity"
+            tools:showIn="@layout/activity_configuration">
+
+            <TextView
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="Configuration Settings"
+                android:textColor="@color/colorWhite"
+                android:typeface="serif" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_button">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:hint="Your Name"
+                    android:textSize="16dp"
+                    android:textColorHighlight="#ffff"
+                    android:textColorHint="#A9A9A9"
+                    android:inputType="text"
+                    android:id="@+id/txtName"
+                    />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Enter Email"
+                    android:textSize="16dp"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textColorHint="#A9A9A9"
+                    android:inputType="text"
+                    android:id="@+id/txtEmail"
+                    android:layout_below="@id/txtName"
+                    />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Your age"
+                    android:textSize="16dp"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textColorHint="#A9A9A9"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:id="@+id/txtAge"
+                    android:layout_below="@id/txtEmail"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_button">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Cost Per Packet"
+                    android:textSize="16dp"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textColorHint="#A9A9A9"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    android:id="@+id/txtCostPrPkt"
+                    />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Cigarette Per Packet"
+                    android:textSize="16dp"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textColorHint="#A9A9A9"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:id="@+id/txtCigPerPkt"
+                    android:layout_below="@id/txtCostPrPkt"
+                    />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Cigarette Consumed Per Day"
+                    android:textSize="16dp"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textColorHint="#A9A9A9"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:id="@+id/txtCigPerDay"
+                    android:layout_below="@id/txtCigPerPkt"
+                    />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Goal"
+                    android:textSize="16dp"
+                    android:textColorHighlight="@color/colorWhite"
+                    android:textColorHint="#A9A9A9"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:id="@+id/txtTargetAmount"
+                    android:layout_below="@id/txtCigPerDay"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvTargetDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="Achieve goal by:"
+                android:textColor="@color/colorRed"/>
+            <DatePicker
+                android:id="@+id/dpTargetDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:background="#ffff"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnSave"
+                android:background="#add8e6"
+                android:elevation="4dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_marginTop="10dp"
+                android:text="Continue"
+                android:textColor="#000" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="data.personal.coursefinalversionfour.SuccessActivity"
+    tools:showIn="@layout/activity_success">
+    <TextView
+        android:id="@+id/tvSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Event Added Successfully"
+        android:textColor="@color/colorWhite"
+        android:typeface="serif" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/add_button">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="You Already Consumed Today: "
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/already_consumed"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="0 Cigarette(s)"
+            android:paddingTop="5dp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="50dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/cig_amount_today"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/already_consumed"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:drawableLeft="@drawable/save"
+        android:gravity="left|center"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/tv_done"
+        android:layout_gravity="center"
+        android:paddingLeft="120dp"
+        android:background="@drawable/add_button"
+        android:textColor="@color/colorWhite"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/done"
+        android:layout_gravity="center"
+        android:id="@+id/ivDone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+</LinearLayout>

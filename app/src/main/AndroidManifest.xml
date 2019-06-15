@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="data.personal.coursefinalversionfour">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/luncher"
+        android:label="QwitButt"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DashboardActivity"
+            android:label="QwitButt"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FileUploader"
+            android:exported="false" />
+
+        <activity
+            android:name=".ConfigurationActivity"
+            android:label="@string/title_activity_configuration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddEventActivity"
+            android:label="@string/title_activity_add_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SuccessActivity"
+            android:label="@string/title_activity_success"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LocationEventActivity"
+            android:label="@string/title_activity_location_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DataVisualizationActivity"
+            android:label="@string/title_activity_data_visualization"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DayPeriodEventActivity"
+            android:label="@string/title_activity_day_period_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProgressActivity"
+            android:label="@string/title_activity_progress"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
